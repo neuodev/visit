@@ -33,7 +33,7 @@ async function getRemoteRef(
 
 export function activate(context: vscode.ExtensionContext) {
   let disposable = vscode.commands.registerTextEditorCommand(
-    "outline.view",
+    "visit.view",
     async (editor) => {
       const start = editor.selection.start;
       const end = editor.selection.end;

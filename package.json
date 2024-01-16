@@ -1,6 +1,6 @@
 {
-  "name": "outline",
-  "displayName": "outline",
+  "name": "visit",
+  "displayName": "Visit",
   "description": "open files in github/gitlab",
   "version": "0.0.1",
   "engines": {
@@ -14,18 +14,14 @@
   "contributes": {
     "commands": [
       {
-        "command": "outline.helloWorld",
-        "title": "Hello World"
-      },
-      {
-        "command": "outline.view",
-        "title": "Outline: View Repository"
+        "command": "visit.view",
+        "title": "Visit: View Repository"
       }
     ],
     "keybindings": [
       {
-        "command": "outline.view",
-        "title": "Outline: View Repository",
+        "command": "visit.view",
+        "title": "Visit: View Repository",
         "key": "ctrl+m",
         "mac": "cmd+m",
         "when": "editorTextFocus"
