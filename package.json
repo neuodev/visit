@@ -22,13 +22,24 @@
       {
         "command": "visit.view",
         "title": "Visit: View Repository"
+      },
+      {
+        "command": "visit.copy",
+        "title": "Visit: Copy Remote Repo URL"
       }
     ],
     "keybindings": [
       {
         "command": "visit.view",
         "title": "Visit: View Repository",
-        "key": "ctrl+m",
+        "key": "ctrl+shift+i",
+        "mac": "cmd+m",
+        "when": "editorTextFocus"
+      },
+      {
+        "command": "visit.view",
+        "title": "Visit: Copy Remote Repo URL",
+        "key": "ctrl+shift+a",
         "mac": "cmd+m",
         "when": "editorTextFocus"
       }
@@ -62,6 +73,7 @@
     "webpack-cli": "^5.1.4"
   },
   "dependencies": {
+    "colors": "^1.4.0",
     "simple-git": "^3.22.0"
   }
 }
